@@ -1,0 +1,136 @@
+
+    .hero-decor {
+        position: absolute;
+        left: 50%;
+        bottom: -6%;
+        transform: translateX(-50%);
+        width: 700px;
+        height: 260px;
+        background: radial-gradient(circle at 10% 20%, rgba(255, 200, 160, .12), transparent 20%),
+            radial-gradient(circle at 90% 80%, rgba(160, 220, 255, .08), transparent 20%);
+        filter: blur(12px);
+        z-index: 0;
+        border-radius: 40px;
+        pointer-events: none;
+    }
+
+    .card-rating {
+        position: absolute;
+        right: 1rem;
+        padding: .35rem .6rem;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: .9rem;
+        box-shadow: 0 6px 14px rgba(8, 65, 45, .06);
+        background: linear-gradient(90deg, #cff8e6, #b9f0d6);
+        color: #0b6b4e;
+    }
+
+    /* 在 md 及以上创建轻微的错落感 */
+    @media (min-width: 768px) {
+        .test-card:nth-child(odd) {
+            transform: translateY(18px);
+        }
+
+        .test-card:nth-child(even) {
+            transform: translateY(-6px);
+        }
+    }
+
+
+    .card {
+        border-radius: .75rem;
+    }
+
+    .rounded-3 {
+        border-radius: .75rem !important;
+    }
+
+    .background-img {
+        background-image: url('img/Mask group.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* ===== 轮播容器不晃动 ===== */
+    .carousel-item {
+        padding-bottom: 8px;
+    }
+
+    /* ===== 进度卡片 ===== */
+    .stage-progress-wrapper {
+        position: relative;
+        max-width: 680px;
+        background: #fff;
+        border-radius: 16px;
+        padding: 28px 32px;
+        margin: 0 auto;
+    }
+
+    /* 行布局 */
+    .stage-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* 灰色底条 */
+    .stage-skill-bar {
+        flex: 1;
+        height: 50px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    /* 填充条 */
+    .stage-fill {
+        display: block;
+        height: 100%;
+        border-radius: 5px;
+        width: 0;
+        transition: width 1.2s ease;
+
+    }
+
+    .stage-fill.strength {
+        background: #1fc7d4;
+    }
+
+    .stage-fill.skill {
+        background: #74da7a;
+    }
+
+    /* 右侧文字 */
+    .stage-label {
+        min-width: 36px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* ===== 自定义轮播按钮 ===== */
+    .stage-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #e9fffb;
+        border: none;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1fc7d4;
+        opacity: 1;
+    }
+
+    .carousel-control-prev.stage-control {
+        left: -12px;
+    }
+
+    .carousel-control-next.stage-control {
+        right: -12px;
+        color: #74da7a;
+    }
+
+    

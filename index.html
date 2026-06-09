@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Instructor Taixi Liu</title>
+
+  <!-- 本地 Bootstrap CSS（或改为 CDN） -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="demo.css">
+
+  <style>
+    /* 尽量使用 Bootstrap 工具类，本处仅保留极少自定义样式 */
+    body { padding-top: 56px; /* 给 fixed-top navbar 预留空间，可根据需要调整 */ }
+    .section-heading { word-break:break-word; }
+
+    .navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #7BCB4B !important;
+}
+  </style>
+</head>
+<!-- 使用 ScrollSpy 的 HTML 属性方式（Bootstrap 原生） -->
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0" style="background-color: #F9FAFB;">
+
+  <!-- 固定页头 -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container" style="max-width:1440px;">
+      <a class="navbar-brand fw-bold fs-6" href="#"><img src="img/Mask group (1).png" alt="logo" style="width: 50px;">Course Instructor Taixi Liu 刘泰希</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#section1">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section2">关于我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section3">雅思课程</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section4">AP课程</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">学员与同行评价</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section6">联系我</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 页面内容 -->
+  <main>
+
+
+<section id="section1" class="position-relative min-vh-100 d-flex align-items-center bg-light background-img">
+    <div class="hero-decor bg-light" aria-hidden="true"></div>
+
+    <div class="container text-center position-relative" style="z-index:2;">
+      <!-- 标题 -->
+      <h1 class="fw-bold display-6 mb-2">不止关注答案对错，更懂拆解问题本质</h1>
+      <p class="lead mb-4">Beyond Right Or Wrong Answers, Master The Art Of<br class="d-none d-md-block">Unpacking Problem Essence</p>
+
+      <a href="#" class="btn btn-dark btn-lg rounded-pill shadow mb-4">还有100+条评价等待您查看 ›</a>
+
+      <!-- Testimonials grid: 使用 bootstrap row/col -->
+      <div class="row g-3 justify-content-center">
+        <!-- 卡片 1 -->
+        <div class="col-12 col-md-7">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">8.0分</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a1/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">江沐辰同学</div>
+                <div class="text-muted small">雅思听力口语</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师帮我在3个月内把雅思口语从6.5提到了8.0。他的教学方法非常系统，能准确地找到我的薄弱环节。”
+            </p>
+          </div>
+        </div>
+
+        <!-- 卡片 2 -->
+        <div class="col-12 col-md-5">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">满分5</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a2/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">夏小柯同学</div>
+                <div class="text-muted small">AP Calculus BC</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师讲解微积分概念的方式太棒了。不只是教公式，而是帮你理解背后的逻辑。AP考试拿到了满分5分！”
+            </p>
+          </div>
+        </div>
+
+        <!-- 卡片 3 -->
+        <div class="col-12 col-md-5">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">7.0+</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a3/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">沈月杉同学</div>
+                <div class="text-muted small">雅思阅读/写作</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “我被困在5.5好几个月了。刘老师发现我真正处于'他认为'的混乱过渡期并引导提速。现在稳定在7分以上。”
+            </p>
+          </div>
+        </div>
+
+        <!-- 卡片 4 -->
+        <div class="col-12 col-md-7">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">8.0分</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a4/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">程星野同学</div>
+                <div class="text-muted small">AP Chemistry</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师的研究背景在化学教学中真的很明显，他能用易懂的方式解释复杂概念。强烈推荐！”
+            </p>
+          </div>
+        </div>
+
+        <!-- 卡片 5 -->
+        <div class="col-12 col-md-12">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">7.0分</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a5/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">左同学</div>
+                <div class="text-muted small">雅思听力口语</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师非常认真负责，有非常丰富的雅思教学经验。在我雅思口语的备考学习中刘老师精准抓住我的痛点，带我一对一拓展了我的答题思路，教会了我实用的答题技巧让我更从容的应对考官的提问，非常感谢刘老师帮助我在雅思考试中取得了7分的好成绩。”
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- 第二屏：About Me -->
+<section id="section2" class="py-5 bg-white">
+  <div class="container">
+    <!-- 标题（带左侧小色条） -->
+    <div class="d-flex align-items-center mb-4">
+      <div class="me-3" style="width:4px;height:36px;background:#6ed3b8;border-radius:4px;"></div>
+      <div>
+        <h2 class="h4 fw-bold mb-0">关于我  About Me</h2>
+        <div class="small text-muted">Personal Introduction </div>
+
+      </div>
+    </div>
+
+    <!-- 顶部：左头像 / 右基本信息 + 分数 -->
+    <div class="row align-items-start mb-4">
+      <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+        <!-- 头像 + 背板：使用极少的自定义样式 -->
+        <div class="position-relative d-inline-block" style="max-width:260px;">
+          <div class="rounded-3" style="position:absolute; left:18px; top:-15px; width:100%; height:100%; background-image: url('img/Rectangle 42 (2).png'); border-radius:12px; z-index:0;"></div>
+          <img src="img/微信图片_20260112171232_119_30.jpg" alt="avatar" class="rounded-3 shadow-sm d-block shadow"  style="width:260px;height:auto;position:relative;z-index:1; object-fit:cover;">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <div class="d-flex flex-column h-100">
+          <div class="mb-3">
+            <h3 class="h3 fw-bold mb-1">课程讲师：刘泰希</h3>
+            <div class="small text-success fw-semibold my-2">教育背景</div>
+            <p class="mb-1 text-muted small">
+              University of Waterloo, Department of Chemical Engineering (滑铁卢大学，化学工程学院本科五年制co-op工程项目）
+            </p>
+            <ul class="small text-muted mb-1" style="padding-left:1rem;">
+              <li>扎实的数学、物理、化学、统计基础</li>
+              <li>在线性代数、微积分1&2等课程中均获得95+的高分</li>
+            </ul>
+            
+          </div>
+            <div class="small text-success fw-semibold mb-2">雅思实考</div>
+          <!-- IELTS score boxes -->
+          <div class="d-flex gap-2 flex-wrap align-items-center">
+            
+            <div class="p-3 rounded-3 shadow-sm text-center" style="min-width:96px; background:#e6fff5;">
+              <div class="fs-5 fw-semibold" style="color: #1E9A7C;">8.0</div>
+              <div class="small text-muted">总分</div>
+              
+            </div>
+
+            <div class="p-3 rounded-3 shadow-sm text-center" style="min-width:96px; background:#eef6ff;">
+              <div class="fs-5 fw-semibold" style="color: #3085F3;">8.5</div>
+              <div class="small text-muted">听力</div>
+              
+            </div>
+
+            <div class="p-3 rounded-3 shadow-sm text-center" style="min-width:96px; background:#f6f0ff;">
+              <div class="fs-5 fw-semibold" style="color: #6440F2;">8.0</div>
+              <div class="small text-muted">口语</div>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 主内容区：用不同浅色块区分（使用 Bootstrap card / bg-light 等） -->
+    <div class="row gap-4 p-4 rounded" style="background-color: #F6F9FC;">
+
+      <!-- 教育经验 -->
+      <div class="col-12">
+        <h4 class="h6  fw-semibold mb-2">教育经验 </h4>
+        <small class=" mb-3 text-success ">累计近4年的一线教学经验，覆盖多学科</small>
+        <div class="card border-0  rounded-3">
+          
+          <div class="card-body">
+            
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <ul class="mb-0 small">
+                  <li>雅思听力及口语 (IELTS Listening & Speaking)</li>
+                  <li class="my-2">AP Calculus AB</li>
+                  <li>AP Chemistry</li>
+                  <li class="my-2">AP Physics 1</li>
+                  <li>AP Statistics</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <ul class="mb-0 small">
+                  <li>AP Precalculus</li>
+                  <li class="my-2">AP Calculus BC</li>
+                  <li>AP Microeconomics</li>
+                  <li class="mt-2">AP Physics C: Mechanics</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 同时具备 / 证书 -->
+      <div class="col-12">
+          <h4 class="h6 fw-semibold mb-2">同时具备</h4>
+        <div class="card border-0  rounded-3">
+          
+          <div class="card-body">
+          
+            <ul class="mb-0 small">
+              <li>TESOL国际英语教师资格证书</li>
+              <li class="my-2">线上+线下系统化授课经验</li>
+              <li>长期带学情分析/阶段性强化/一对一高端课</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gap-4 p-4 my-4 rounded" style="background-color: #F6F9FC;">
+      <!-- 雅思实战经验 / 监考经历（并排两列） -->
+      <div class="col">
+        <div class="card border-0  rounded-3">
+          <div class="card-body">
+            <h5 class="h6 fw-semibold">雅思实战经验</h5>
+            <ul class="small mb-0">
+              <li>8场雅思实考，且在实考中获得听力8.5，口语8分</li>
+              <li class="my-2">在雅思听力、口语上形成成熟的教学体系</li>
+              <li>对学生瓶颈、分段特征有精准判断力</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 shadow-sm rounded-3">
+          <div class="card-body">
+            <h5 class="h6 fw-semibold">曾在雅思纸笔考点担任监考</h5>
+            <ul class="small mb-0">
+              <li>熟悉监考规范与流程细节</li>
+              <li class="my-2">熟悉监考规范</li>
+              <li>深度理解考试逻辑与出题方式</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.row -->
+
+    <div class="row gap-4 p-4 my-4 rounded" style="background-color: #F6F9FC;">
+      <!-- 科研经历（多段卡片） -->
+      <div class="col-12">
+        <div class=" border-0 rounded-3">
+          <h5 class="h6 fw-semibold mb-3">科研经历</h5>
+          <div class="card-body">           
+            <div class="mb-3 p-3 rounded-3" style="color: #1E9A7C; background:#fff;">
+              <div class="fw-semibold">清华大学 刘教授课题组 访问研究学者</div>
+               <div class="small  text-muted">26年1-8月</div>
+               <div class="row px-3">
+                <ul class="col small mb-0 text-muted">
+                  <li class="pt-3">PAM Screen文库构建与筛选体系优化</li>
+                  <li class="py-2">高效率感受态细胞制备Protocol优化</li>
+                  <li>Protein Purification蛋白表达与纯化</li>
+                  <li class="py-2">分子克隆与多质粒构建</li>
+                  <li>PCR建库与NGS送测流程</li>
+                </ul>
+                <ul class="col small mb-0 text-muted">
+                  <li class="pt-3"> DNA测序结果分析与序列验证</li>
+                  <li class="py-2">Dual Transformation与毒性表型分析</li>
+                  <li>Growth Assay与编辑活性验证</li>
+                  <li class="py-2"> Troubleshooting与实验流程优化</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="mb-3 p-3 rounded-3" style="color: #3085F3; background:#fff;">
+              <div class="fw-semibold ">加拿大滑铁卢大学 课题组成员 </div>
+              <span class="small text-muted pb-3">25年至今</span>
+              <div class="row px-3">
+              <ul class="col small mb-0 text-muted">
+                <li class="pt-3">质粒设计与构建</li>
+                <li class="py-2">质粒设计与构建</li>
+                <li>Competent Cell高效感受态细胞制备</li>
+                <li class="py-2">PCR扩增与琼脂糖凝胶电泳</li>
+                <li>实验方案优化</li>
+              </ul>
+              <ul class="col small mb-0 text-muted">
+                <li class="pt-3"> 分子克隆与菌株构建</li>
+                <li class="py-2">CRISPRi调控系统</li>
+                <li>电转换与热激转化</li>
+                <li class="py-2"> DNA链或质粒测序结果分析</li>
+                <li>Troubleshooting与条件优化</li>
+              </ul>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-3" style="color: #9940F2; background:#fff;">
+              <div class="fw-semibold ">山东大学 刘课题组 访问学者 </div>
+              <span class="small text-muted">23年11月-12月</span>
+              <ul class="small mb-0 text-muted">
+                <li class="pt-3">气相色谱样品制备与谱图分析</li>
+                <li class="py-2">硅胶柱色谱分离与纯化</li>
+                <li> 核磁共振氢谱与碳谱样品制备及谱图分析</li>
+                <li class="pt-2">有机反应产物的分离、表征、结果验证</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.row -->
+
+    <div class="row gap-4 p-4 my-4 rounded text-body" style="background-color: #F6F9FC;">
+      <!-- 教学理念（宽块带浅色背景） -->
+      <div class="col-12">
+        <h5 class="h6 fw-semibold mb-2">教学理念</h5>
+          <p class="small mb-0 " style="line-height:1.6;">
+            在长期的科研训练和大量一线教学经历中，我慢慢形成了一种习惯
+          </p>
+        <div class="p-3 text-muted my-4 rounded-3" style="background:#f0fbff;">
+          遇到问题，先搞清楚问题本身，而不是急着找答案。<br>
+不管是做科研还是教学生，我都会多往下想一层，去看问题的底层逻辑，尽量从根上解决，而不是头痛医头、脚痛医脚。<br>
+其实在科研里也是一样的。无论是实验设计时去定位变量，还是实验失败之后一步一步排查原因、反复做实验，这种思维方式都要求你对整个过程非常敏感，而不是只盯着一个结果。这也是为什么实验数据一定要及时记录，而不是靠回忆、靠印象——因为很多时候，真正有用的信息就藏在过程里，细节里。<br>
+在教学中，不只是看表面上的正确率，比如对了多少题、错了多少题，更重要的是判断：这个学生现在卡在哪里？接下来最可能走什么弯路？我应该怎么去引导他，把这些弯路提前避开。<br>
+正因为这样，我在教学中特别重视判断学生目前所处的学习阶段，而不是对所有学生统一套用一套方法。<br>
+我教过的学生遇到过哪些问题、这些问题当时是怎么解决的，我基本都会记在心里。当我再遇到一个新学生时，我会很自然地在过往的学生经历里去“对照”，快速判断哪些情况是相似的、之前用什么方式效果最好，再据此去调整现在的引导方式。
+
+        </div>
+      </div>
+
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</section>
+
+
+<!-- 第三屏：雅思课程（直到蓝色分割线） -->
+<section id="section3" class="py-5 bg-light">
+  <div class="container ">
+
+    <!-- 标题 -->
+  <div class="container">
+    <div class="d-flex align-items-center mb-4">
+      <div class="me-3" style="width:4px;height:36px;background:#6ed3b8;border-radius:4px;"></div>
+      <div>
+        <h2 class="h4 fw-bold mb-0">雅思课程 IELTS courses</h2>
+        <div class="small text-muted">Course Introduction </div>
+      </div>
+    </div>
+
+    <!-- 按钮/标签 -->
+    <div class="mb-3">
+      <button class="btn fs-6 btn-sm rounded px-3 py-2" style="background:linear-gradient(90deg,#bff1df,#8fe8d0); border:0;">
+        长线备考计划
+      </button>
+    </div>
+
+    <!-- 概述卡（浅色卡）-->
+    <div class="card border-0 shadow-sm rounded-3 mb-4">
+      <div class="card-body">
+        <p class="mb-0 small text-muted">
+          很多同学在雅思的学习过程中，很多同学会遇到一些“瓶颈”，往往并不是不努力，而是在错误的阶段做了错误的事情<br>
+长线备考计划的课程体系，从基础分段，一直到高分段，我会带着学生，一步一步的，稳扎稳打的，通过判断学生当前所处的学习阶段，并在每一个阶段过渡期之前提前介入，避免学生走弯路
+我会将雅思听力的长线备考过程分解到两个维度（技巧，实力）上来帮助学生来理解和提升
+        </p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="nav-column">
+          <button class="round-btn" onclick="prevStep()">❮</button>
+      </div>
+  
+      <div class="main-content">
+        <h2 id="title" style="text-align: center;">...</h2>
+        <!-- <div class="info-box">
+          <h2 id="title">...</h2>
+          <p id="desc"></p>
+      </div> -->
+          <div class="chart-module">
+              <div class="bar-container">
+                  <div class="label-box" style="color: var(--primary-blue)">
+                      <span>做题技巧</span>
+                      <span id="skill-val">0%</span>
+                  </div>
+                  <div class="track"><div id="skill-bar" class="fill"></div></div>
+              </div>
+              <div class="bar-container">
+                  <div class="label-box" style="color: var(--primary-green)">
+                      <span>真实实力</span>
+                      <span id="strength-val">0%</span>
+                  </div>
+                  <div class="track"><div id="strength-bar" class="fill"></div></div>
+              </div>
+          </div>
+          <p id="desc"></p>
+          <!-- <div class="info-box">
+              <h2 id="title">...</h2>
+              <p id="desc"></p>
+          </div> -->
+  
+          <div class="dot-nav" id="dot-container"></div>
+          <div class="status-label" id="status-tag">自动播放中</div>
+      </div>
+  
+      <div class="nav-column">
+          <button class="round-btn" onclick="nextStep()" style="color: var(--primary-blue)">❯</button>
+      </div>
+  </div>
+    <!-- 阶段卡（带进度/柱状图）-->
+
+
+    <!-- 案例分享（浅绿背景块）-->
+    <div class="p-4 rounded-3 shadow-sm mb-4" style="background:#f2fff6; border:1px solid rgba(110,211,184,.12);">
+      <h5 class="fs-5 text-success fw-semibold">我会怎么样引导学生（案例分享）</h5>
+      <p class="fs-5 pt-4 text-muted">案例1：来自山西的叶同学</h5>
+      <p>我在观察来自山东的叶同学在做题的时候，尤其是Part4的填空题，他听音频的时候，不看题目了，开始盯着一个角落看，尝试分辨音频里的文意，从而错过了很多定位词和答案词，Part4本来能对五六个的，现在一个都做不对了。</p>
+        
+      <p class="fs-5 pt-4 text-muted">我的解决方案：</h5>
+      <p>我要求叶同学，在未来的一段时间内，停止刷雅思的题目。我带他先做短句子的听英文写汉语，再把句子长度增长，词汇变难，音频次数变少。</p>
+      
+      <p class="fs-5 pt-4 text-muted">结果:</h5>
+      <p> 慢慢的他习惯了，能听懂了，回来一做雅思的题目，豁然开朗，也能听懂文章了，同时也能够分一些注意力去抓定位词，去运用做题技巧，最后逐渐的去总结自己的做题思路、方法、技巧。</p>
+  </div>
+
+<!-- 短线冲刺计划（重置版） -->
+<section id="short-sprint" class="py-5">
+
+
+      <div>
+             <button class="btn btn-sm fs-6 rounded px-3 py-2" style="background:linear-gradient(90deg,#bff1df,#8fe8d0); border:0;">
+        短线冲刺计划
+      </button>
+      </div>
+
+
+    <!-- 说明卡 -->
+    <div class="card border-0  shadow-sm rounded-3 my-4">
+      <div class="card-body">
+        <p class="mb-0 small text-muted">
+          短线冲刺计划的课程主要面向临近考试，希望在有限时间内尽可能提升成绩的学生。在这一类课程里，我不会套用一个模版，很难用一套固定方法去概括，
+          都是具体学员的情况去具体分析，因为每个学员的基础、问题点和可调整进步空间都不太一样。我会根据学生原考试的时间、当前状态和最可能提升的方向，单独设计一套有看重点的备考方案。
+        </p>
+        <p class="mt-3 mb-0 fw-semibold" style="color:#3b62ff;">
+          目标只有一个：在有限的时间里，做最划算的调整
+        </p>
+      </div>
+    </div>
+
+    <!-- 三个小标签（点缀） -->
+    <div class="d-flex gap-1 flex-wrap mb-3">
+      <div class="p-3 rounded-3 flex-fill shadow-sm" style="background:#fbfffe; border-left:6px solid #6ed3b8; min-width:200px;">
+        有的学生能听懂大部分文章，但是不熟悉题型思路
+      </div>
+      <div class="p-3 rounded-3 flex-fill shadow-sm" style="background:#f7fdff; border-left:6px solid #14c7d4; min-width:200px;">
+        有的学生选择题做得好，有的填空题做的好
+      </div>
+      <div class="p-3 rounded-3 flex-fill shadow-sm" style="background:#fffaf7; border-left:6px solid #cfa8ff; min-width:200px;">
+        也有的学生备考时间极短，只能做取舍
+      </div>
+    </div>
+
+    <!-- 主要卡片：我在这短线冲刺计划课程里会做什么？ -->
+    <div class="card border-0 shadow-sm pb-3 rounded-3 mb-4">
+      <div class="card-body">
+        <h5 class="h6 fw-semibold mb-3">我在这短线冲刺计划课程里会做什么？</h5>
+        <p class="small text-muted mb-3">在正式开课之前，我会让学生先做一套或半套真题，然后判断：</p>
+
+        <div class="row g-3 mb-3">
+          <!-- checklist 列表 -->
+          <div class="col-12 col-md-6">
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                距离考试还有多长时间
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                听力实力大概在什么水平
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                哪些题型“强提升快、收益高”
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                哪些地方不适合大改
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                哪些错误可以短期纠正
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-light border text-success me-2">✓</span>
+                制定可执行的短期复习计划与练习表
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="small text-danger">在此基础上，我会明确取舍，而不是“什么都想抓一点”。</p>
+      </div>
+
+     <div class="p-4 rounded-3 mx-2" style="background:#f2fff6; border:1px solid rgba(110,211,184,.12);">
+      <h5 class="fs-5 text-success fw-semibold">我会怎么样引导学生（案例分享）</h5>
+      <p class="fs-5 pt-4 text-muted">案例1：来自山西的叶同学</h5>
+      <p>我在观察来自山东的叶同学在做题的时候，尤其是Part4的填空题，他听音频的时候，不看题目了，开始盯着一个角落看，尝试分辨音频里的文意，从而错过了很多定位词和答案词，Part4本来能对五六个的，现在一个都做不对了。</p>
+        
+      <p class="fs-5 pt-4 text-muted">我的解决方案：</h5>
+      <p>我要求叶同学，在未来的一段时间内，停止刷雅思的题目。我带他先做短句子的听英文写汉语，再把句子长度增长，词汇变难，音频次数变少。</p>
+      
+      <p class="fs-5 pt-4 text-muted">结果:</h5>
+      <p> 慢慢的他习惯了，能听懂了，回来一做雅思的题目，豁然开朗，也能听懂文章了，同时也能够分一些注意力去抓定位词，去运用做题技巧，最后逐渐的去总结自己的做题思路、方法、技巧。</p>
+  </div>
+  <div class="p-4 rounded-3 mx-2" style="background:#f2fff6; border:1px solid rgba(110,211,184,.12);margin-top: 20px;">
+    <h5 class="fs-5 text-success fw-semibold">我会怎么样引导学生（案例分享）</h5>
+    <p class="fs-5 pt-4 text-muted">案例2：来自加拿大温哥华的王同学</h5>
+    <p>王同学开始学的时候距离考试只剩了两周，已经在加拿大的英语环境下学习生活了一年，听力基础较好，模考听力能到6分，Part2和Part3正确率在50%左右</p>
+      
+    <p class="fs-5 pt-4 text-muted">我的解决方案：</h5>
+    <p>重点抓Part1和Part4点填空题，Part2和Part3的做题思路上，不要做太多创新，选择题保持手感即可，Part1和4的提升空间更大。通过听写语料库词汇，整理错词词库的方式减少听对了答案词但是拼错了造成的失误。通过讲解Part4填空题做题技巧熟悉答题思路，更精准的抓答案词。</p>
+    
+    <p class="fs-5 pt-4 text-muted">结果:</h5>
+    <p> 听力实考7.5分</p>
+</div>
+    </div>
+
+  
+
+</section>
+
+
+  </div>
+</section>
+
+
+<!--AP课程  -->
+<section id="section4" class="py-5 bg-white">
+  <div class="container">
+    <div class="d-flex align-items-center mb-4">
+      <div class="me-3" style="width:4px;height:36px;background:#6ed3b8;border-radius:4px;"></div>
+      <div>
+        <h2 class="h4 fw-bold mb-0">AP课程 Advanced Placement Program</h2>
+        <div class="small text-muted">Course Introduction </div>
+      </div>
+    </div>
+
+    <!-- 三列科目卡 -->
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-md-4">
+        <div class="p-3 gradient-frame h-100">
+          <div class="bg-white rounded-3 p-3 h-100">
+            <h6 class="fw-semibold text-success text-center">数学类</h6>
+            <ul class="small mb-0 mt-2">
+              <li>AP Precalculus</li>
+              <li class="py-2">AP Calculus AB</li>
+              <li>AP Calculus BC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="p-3 gradient-frame-2 h-100">
+          <div class="bg-white rounded-3 p-3 h-100">
+            <h6 class="fw-semibold text-primary text-center">理科类</h6>
+            <ul class="small mb-0 mt-2">
+              <li>AP Chemistry</li>
+              <li class="pt-2">AP Physics 1</li>
+              <li class="pt-2">AP Physics C: Mechanics</li>
+              <li class="pt-2">AP Statistics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="p-3 gradient-frame-3 h-100">
+          <div class="bg-white rounded-3 p-3 h-100">
+            <h6 class="fw-semibold text-purple text-center">经济类</h6>
+            <ul class="small mb-0 mt-2">
+              <li>AP Microeconomics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 课程特色 -->
+    <div class="card border-0 shadow-sm rounded-3 p-3">
+      <div class="card-body">
+        <h5 class="h6 fw-semibold mb-3">课程特色</h5>
+        <ul class="small mb-0">
+          <li>依托扎实的学科基础（清华大学化学工程本科、清华/滑铁卢等研究经历），精准把握 AP 考点与难点，直指考试核心。</li>
+          <li>近4年一线教学经验，熟悉不同基础学生的学习痛点，针对性设计教学方案，避免“一刀切”的教学。</li>
+          <li>注重思维与方法训练，不仅传授知识点与答题技巧，更培养学生的学科思维与应试策略。</li>
+          <li>提供个性化备考规划，根据学生目标分数、时间安排，制定高效复习计划，最大化提升效率。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 联系我 Footer -->
+<footer id="section6" class="py-5" style="background:linear-gradient(180deg,#0b0b0b 0%, #222 100%); color:#fff !important;">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="d-flex align-items-center mb-3">
+          <div class="me-3" style="width:4px;height:28px;background:#6ed3b8;border-radius:4px;"></div>
+          <div>
+            <div class="h5 mb-0 fw-bold">联系我 Contact Me</div>
+            <div class="small" style="opacity:.6;">Please Contact Me!</div>
+          </div>
+        </div>
+
+
+
+        <!-- QR 占位 -->
+        <div class="mb-3">
+          <div class="bg-white rounded-2 d-inline-block p-2" style="width:120px; height:120px;">
+            <!-- 空占位：把下面的 img src 换成真实二维码 -->
+            <div class="w-100 h-100 d-flex align-items-center justify-content-center" style="background:#f8f8f8; border-radius:6px;">
+              <span class="small "><img class="w-100" src="img/beb02df0b26a0911fd018b03842bade147dc4b25.jpg" alt=""></span>
+            </div>
+          </div>
+          <div class="small  d-block mt-2">扫描二维码，添加我的微信</div>
+        </div>
+
+        <div class="mt-4">
+          <h6 class="h6 fw-semibold">准备开始您的学习之旅？请与我联系！</h6>
+          <div class="small ">Ready To Embark On Your Learning Journey? Contact Me!</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- ----- 最小自定义样式（将它放到你的全局 <style> 中） ----- -->
+<style>
+  /* 统一卡片圆角（与前面保持一致） */
+  .card { border-radius: .75rem; }
+
+  /* 三个渐变边框样式（外框渐变 + 内部白色） */
+  .gradient-frame{
+    border-radius:.75rem;
+    background: linear-gradient(90deg,#bff1df,#b9f0ff);
+    padding:8px;
+  }
+  .gradient-frame-2{
+    border-radius:.75rem;
+    background: linear-gradient(90deg,#b9ecff,#d9f1ff);
+    padding:8px;
+  }
+  .gradient-frame-3{
+    border-radius:.75rem;
+    background: linear-gradient(90deg,#ffd8ff,#d8b7ff);
+    padding:8px;
+  }
+
+  /* 小颜色类 */
+  .text-purple { color:#9b5cff !important; }
+
+  /* footer 阴影感（轻微） */
+  footer { box-shadow: inset 0 12px 40px rgba(0,0,0,.25); }
+</style>
+
+
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/demo.js"></script>
+  <script>
+    // 可选：当在移动端点击导航链接时自动折叠导航菜单（Bootstrap 纯 JS）
+    (function(){
+      var navCollapse = document.getElementById('navCollapse');
+      var navLinks = navCollapse.querySelectorAll('.nav-link');
+      navLinks.forEach(function(link){
+        link.addEventListener('click', function(){
+          var bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, {toggle:false});
+          if (window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
+            bsCollapse.hide();
+          }
+        });
+      });
+    })();
+
+
+        // 进度条动画
+ document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.getElementById('stageCarousel');
+  if (!carousel) return;
+
+  function resetProgress(slide) {
+    if (!slide) return;
+    slide.querySelectorAll('.stage-fill').forEach(bar => {
+      bar.style.transition = 'none';
+      bar.style.width = '0%';
+    });
+  }
+
+  function animateProgress(slide) {
+    if (!slide) return;
+
+    slide.querySelectorAll('.stage-fill').forEach(bar => {
+      const value = bar.dataset.progress;
+      if (!value) return;
+
+      // 强制重绘
+      bar.offsetHeight;
+
+      // 播放动画
+      bar.style.transition = 'width 1.2s ease';
+      bar.style.width = value + '%';
+    });
+  }
+
+  /* ========== 初始化 ========== */
+  requestAnimationFrame(() => {
+    const active = carousel.querySelector('.carousel-item.active');
+    resetProgress(active);
+    animateProgress(active);
+  });
+
+  /* ========== 关键修复点 ========== */
+
+  // 👉 在“开始切换”时，提前清空【即将出现的 slide】
+  carousel.addEventListener('slide.bs.carousel', function (e) {
+    resetProgress(e.relatedTarget);
+  });
+
+  // 👉 在“切换完成”后，播放动画
+  carousel.addEventListener('slid.bs.carousel', function (e) {
+    animateProgress(e.relatedTarget);
+  });
+});
+
+  </script>
+</body>
+</html>

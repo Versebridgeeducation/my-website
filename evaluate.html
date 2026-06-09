@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap5 单页模板 - 6 板块（Bootstrap 风格）</title>
+
+  <!-- 本地 Bootstrap CSS（或改为 CDN） -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="custom.css">
+
+  <style>
+    /* 尽量使用 Bootstrap 工具类，本处仅保留极少自定义样式 */
+    body { padding-top: 56px; /* 给 fixed-top navbar 预留空间，可根据需要调整 */ }
+    .section-heading { word-break:break-word; }
+  </style>
+</head>
+
+<!-- 使用 ScrollSpy 的 HTML 属性方式（Bootstrap 原生） -->
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <!-- 固定页头 -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container" style="max-width:1200px;">
+      <a class="navbar-brand fw-bold" href="#">站点标题</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#section1">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section2">关于我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section3">雅思课程</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section4">AP课程</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section5">学员与同行评价</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section6">联系我</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 页面内容 -->
+  <main>
+
+
+<section id="section1" class="position-relative min-vh-100 d-flex align-items-center bg-light background-img">
+    <div class="hero-decor" aria-hidden="true"></div>
+
+    <div class="container text-center position-relative" style="z-index:2;">
+      <!-- 标题 -->
+      <h1 class="fw-bold display-4 mb-2">因材施教循规律，固本培元探本质</h1>
+      <p class="lead mb-4">Teach students in accordance with their<br class="d-none d-md-block">aptitude, explore the essence by consolidating the fundamentals.</p>
+
+      <a href="#" class="btn btn-dark btn-lg rounded-pill shadow mb-4">还有100+条评价等待您查看 ›</a>
+
+      <!-- Testimonials grid: 使用 bootstrap row/col -->
+      <div class="row g-3 justify-content-center">
+        <!-- 卡片 1 -->
+        <div class="col-6 col-md-3">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">置顶</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a1/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">刘俊杰 教授</div>
+                <div class="text-muted small">清华大学 研究导师</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start fs-6" style="line-height:1.45;">
+              刘泰希在我们实验室期间展现出了卓越的研究能力和对科学方法论的深刻理解。她分析复杂问题的能力以及清晰传达研究成果的水平使她成为一名杰出的教育工作者。
+            </p>
+            <div class="w-100 text-end mt-2">
+
+              <a href="#" class="text-decoration-none">查看详情 ›</a>
+
+            </div>
+          </div>
+        </div>
+                <div class="col-3 col-md-3">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">置顶</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a1/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">江沐辰同学</div>
+                <div class="text-muted small">雅思听力口语</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师帮我在3个月内把雅思口语从6.5提到了8.0。他的教学方法非常系统，能准确地找到我的薄弱环节。”
+            </p>
+          </div>
+        </div>
+                <div class="col-3 col-md-3">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">置顶</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a1/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">江沐辰同学</div>
+                <div class="text-muted small">雅思听力口语</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师帮我在3个月内把雅思口语从6.5提到了8.0。他的教学方法非常系统，能准确地找到我的薄弱环节。”
+            </p>
+          </div>
+        </div>
+                <div class="col-6 col-md-3">
+          <div class="card p-3 shadow-sm rounded-3 position-relative test-card">
+            <div class="card-rating">置顶</div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-3">
+                <img src="https://picsum.photos/seed/a1/80/80" alt="avatar" class="rounded-circle" style="width:44px; height:44px; object-fit:cover;">
+              </div>
+              <div class="text-start">
+                <div class="fw-semibold">江沐辰同学</div>
+                <div class="text-muted small">雅思听力口语</div>
+              </div>
+            </div>
+
+            <p class="mb-0 text-start" style="line-height:1.45;">
+              “刘老师帮我在3个月内把雅思口语从6.5提到了8.0。他的教学方法非常系统，能准确地找到我的薄弱环节。”
+            </p>
+          </div>
+        </div>
+
+  </section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // 可选：当在移动端点击导航链接时自动折叠导航菜单（Bootstrap 纯 JS）
+    (function(){
+      var navCollapse = document.getElementById('navCollapse');
+      var navLinks = navCollapse.querySelectorAll('.nav-link');
+      navLinks.forEach(function(link){
+        link.addEventListener('click', function(){
+          var bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, {toggle:false});
+          if (window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
+            bsCollapse.hide();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
